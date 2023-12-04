@@ -1,6 +1,10 @@
 import React, { useRef } from "react";
 import styled from "styled-components";
 import { color, easeInOut, motion, useScroll } from "framer-motion";
+import CafeEx from "./assets/CafeEx.png";
+import ExDisney from "./assets/ExDisney.png"
+import Fantastika from "./assets/Fantastika.png"
+import twex from "./assets/twex.png" 
 
 const SectionProjetos = styled(motion.section)`
   height: 170vh;
@@ -63,34 +67,34 @@ export default function Projetos() {
     {
       titulo: "Fantastika",
       link: "https://fantastika.vercel.app/",
-      img: "./src/assets/Fantastika.png",
+      img: Fantastika,
       desc: "Projeto final do primeiro módulo do VainaWeb, em html e css e utilizando media queries",
       alt: "Projeto Fantastika",
-      linkgh: "https://github.com/PedroAraujobs/Fantastika"
+      linkgh: "https://github.com/PedroAraujobs/Fantastika",
     },
     {
       titulo: "CaféEx",
       link: "https://aula-cafe.vercel.app/",
-      img: "./src/assets/CafeEx.png",
+      img: CafeEx,
       desc: "Projeto proposto pela equipe do VainaWeb utilizando html e css básicos para exercitar media queries",
       alt: "Projeto Café",
-      linkgh: "https://github.com/PedroAraujobs/aula-cafe"
+      linkgh: "https://github.com/PedroAraujobs/aula-cafe",
     },
     {
       titulo: "DisneyEx",
       link: "https://disneyplus-ivory.vercel.app/",
-      img: "./src/assets/ExDisney.png",
+      img: ExDisney,
       desc: "Meu primeiro projeto em html",
       alt: "Projeto Disney",
-      linkgh: "https://github.com/PedroAraujobs/disneyplus"
+      linkgh: "https://github.com/PedroAraujobs/disneyplus",
     },
     {
       titulo: "The Witcher Ex",
       link: "https://the-witcher-two.vercel.app/",
-      img: "./src/assets/twex.png",
+      img: twex,
       desc: "Modelo estático de uma página de the Witcher em html e css",
       alt: "Projeto The Witcher",
-      linkgh: "https://github.com/PedroAraujobs/The-Witcher"
+      linkgh: "https://github.com/PedroAraujobs/The-Witcher",
     },
   ];
   return (
@@ -102,7 +106,7 @@ export default function Projetos() {
               {" "}
               <motion.img
                 whileHover={{ scale: 1.01, rotate: 3 }}
-                whileTap={{ scale: 0.99,  }}
+                whileTap={{ scale: 0.99 }}
                 src={item.img}
                 alt={item.alt}
               />

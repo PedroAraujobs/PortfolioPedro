@@ -1,6 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 import { easeInOut, motion } from "framer-motion";
+import github from "./assets/github.png";
+import linkedin from "./assets/linkedin.png";
+import whatsapp from "./assets/whatsapp.png";
 
 const SectionInicio = styled(motion.section)`
   width: 75vw;
@@ -38,14 +41,12 @@ export const Redes = styled(motion.figure)`
   height: 7vh;
   display: flex;
   justify-content: space-evenly;
-
 `;
 const LinkRedes = styled.a`
-
-img{
-  width: 3vw;
-}
-`
+  img {
+    width: 3vw;
+  }
+`;
 
 export default function Inicio() {
   const container = {
@@ -112,25 +113,30 @@ export default function Inicio() {
             <motion.img
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.8 }}
-              src="./src/assets/github.png"
+              src={github}
               alt="github"
             />{" "}
           </LinkRedes>
-          <LinkRedes href="https://www.linkedin.com/in/pedro-botelho-81565a263/" target="blank">
+          <LinkRedes
+            href="https://www.linkedin.com/in/pedro-botelho-81565a263/"
+            target="blank"
+          >
             <motion.img
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.8 }}
-              src="./src/assets/linkedin.png"
+              src={linkedin}
               alt="linkedin"
             />
             {""}
           </LinkRedes>
-          <LinkRedes href="https://wa.me/5521965247495" target="blank"><motion.img
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.8 }}
-            src="./src/assets/whatsapp.png"
-            alt="whatsapp"
-          /></LinkRedes>
+          <LinkRedes href="https://wa.me/5521965247495" target="blank">
+            <motion.img
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.8 }}
+              src={whatsapp}
+              alt="whatsapp"
+            />
+          </LinkRedes>
         </Redes>
       </SectionInicio>
     </>

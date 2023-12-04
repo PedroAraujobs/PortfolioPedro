@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
+import ProfileBlur from "./assets/ProfileBlur.png"
 
 export const SectionSobre = styled.section`
   display: flex;
@@ -69,7 +70,7 @@ export default function Sobre() {
             damping: 15,
           }}
         >
-          <img src="./src/assets/ProfileBlur.png" alt="Foto de Perfil" />
+          <img src={ProfileBlur} alt="Foto de Perfil" />
         </FigurePerfil>
       </SectionSobre>
     </>
