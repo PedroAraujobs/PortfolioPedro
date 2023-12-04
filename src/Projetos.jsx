@@ -6,7 +6,7 @@ import ExDisney from "./assets/ExDisney.png"
 import Fantastika from "./assets/Fantastika.png"
 import twex from "./assets/twex.png" 
 
-const SectionProjetos = styled(motion.section)`
+export const SectionProjetos = styled(motion.section)`
   height: 170vh;
   width: 100%;
   display: flex;
@@ -16,7 +16,7 @@ const SectionProjetos = styled(motion.section)`
   overflow: hidden;
 `;
 
-const FigureFormato = styled(motion.figure)`
+export const FigureFormato = styled(motion.figure)`
   display: flex;
   height: 70vh;
   width: 45vw;
@@ -33,7 +33,7 @@ const FigureFormato = styled(motion.figure)`
   }
 `;
 
-const DivFormato = styled(motion.div)`
+export const DivFormato = styled(motion.div)`
   width: 95%;
   display: flex;
   justify-content: space-evenly;

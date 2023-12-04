@@ -5,7 +5,7 @@ import github from "./assets/github.png";
 import linkedin from "./assets/linkedin.png";
 import whatsapp from "./assets/whatsapp.png";
 
-const SectionInicio = styled(motion.section)`
+export const SectionInicio = styled(motion.section)`
   width: 75vw;
   height: 65vh;
   display: flex;
